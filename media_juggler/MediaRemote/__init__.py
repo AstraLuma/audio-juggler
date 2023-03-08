@@ -15,7 +15,7 @@ with _catch():
 
     __bundle__ = _objc.initFrameworkWrapper(
         __name__,
-        frameworkIdentifier=None,
+        frameworkIdentifier='com.apple.MediaRemote',
         frameworkPath=_objc.pathForFramework(
             "/System/Library/PrivateFrameworks/MediaRemote.framework"
         ),
