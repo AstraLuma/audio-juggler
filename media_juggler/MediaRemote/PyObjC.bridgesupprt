@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+  <constant name='kMRMediaRemoteNowPlayingApplicationDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingApplicationIsPlayingDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingApplicationIsPlayingUserInfoKey' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingApplicationPIDUserInfoKey' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoAlbum' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoArtist' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoArtworkData' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoArtworkMIMEType' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoChapterNumber' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoComposer' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoDuration' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoElapsedTime' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoGenre' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoIsAdvertisement' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoIsBanned' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoIsInWishList' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoIsLiked' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoIsMusicApp' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoPlaybackRate' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoProhibitsSkip' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoQueueIndex' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoRadioStationHash' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoRadioStationIdentifier' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoRepeatMode' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoShuffleMode' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoStartTime' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoSupportsFastForward15Seconds' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoSupportsIsBanned' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoSupportsIsLiked' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoSupportsRewind15Seconds' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTimestamp' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTitle' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTotalChapterCount' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTotalDiscCount' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTotalQueueCount' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTotalTrackCount' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoTrackNumber' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingInfoUniqueIdentifier' type64='i' />
+  <constant name='kMRMediaRemoteNowPlayingPlaybackQueueDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteOptionMediaType' type64='i' />
+  <constant name='kMRMediaRemoteOptionSourceID' type64='i' />
+  <constant name='kMRMediaRemoteOptionStationHash' type64='i' />
+  <constant name='kMRMediaRemoteOptionStationID' type64='i' />
+  <constant name='kMRMediaRemoteOptionTrackID' type64='i' />
+  <constant name='kMRMediaRemotePickableRoutesDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteRouteDescriptionUserInfoKey' type64='i' />
+  <constant name='kMRMediaRemoteRouteStatusDidChangeNotification' type64='i' />
+  <constant name='kMRMediaRemoteRouteStatusUserInfoKey' type64='i' />
+  <enum name='kMRAddTrackToWishList' value64='108' />
+  <enum name='kMRBanTrack' value64='107' />
+  <enum name='kMREndBackwardSeek' value64='11' />
+  <enum name='kMREndForwardSeek' value64='9' />
+  <enum name='kMRGoBackFifteenSeconds' value64='12' />
+  <enum name='kMRLikeTrack' value64='106' />
+  <enum name='kMRNextTrack' value64='4' />
+  <enum name='kMRPause' value64='1' />
+  <enum name='kMRPlay' value64='0' />
+  <enum name='kMRPreviousTrack' value64='5' />
+  <enum name='kMRRemoveTrackFromWishList' value64='109' />
+  <enum name='kMRSkipFifteenSeconds' value64='13' />
+  <enum name='kMRStartBackwardSeek' value64='10' />
+  <enum name='kMRStartForwardSeek' value64='8' />
+  <enum name='kMRStop' value64='3' />
+  <enum name='kMRTogglePlayPause' value64='2' />
+  <enum name='kMRToggleRepeat' value64='7' />
+  <enum name='kMRToggleShuffle' value64='6' />
+  <function name='MRMediaRemoteBeginRouteDiscovery'>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteCopyPickableRoutes'>
+    <retval type64='i' />
+  </function>
+  <function name='MRMediaRemoteCopyPickableRoutesForCategory'>
+    <arg type64='^i' />
+    <retval type64='i' />
+  </function>
+  <function name='MRMediaRemoteEndRouteDiscovery'>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteGetNowPlayingApplicationIsPlaying'>
+    <arg type64='i' />
+    <arg function_pointer='true' type64='@?'>
+      <arg type64='B' />
+      <retval type64='v' />
+    </arg>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteGetNowPlayingApplicationPID'>
+    <arg type64='i' />
+    <arg function_pointer='true' type64='@?'>
+      <arg type64='i' />
+      <retval type64='v' />
+    </arg>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteGetNowPlayingInfo'>
+    <arg type64='i' />
+    <arg function_pointer='true' type64='@?'>
+      <arg type64='i' />
+      <retval type64='v' />
+    </arg>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteKeepAlive'>
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemotePickedRouteHasVolumeControl'>
+    <retval type64='B' />
+  </function>
+  <function name='MRMediaRemoteRegisterForNowPlayingNotifications'>
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSelectSourceWithID'>
+    <arg type64='i' />
+    <retval type64='i' />
+  </function>
+  <function name='MRMediaRemoteSendCommand'>
+    <arg type64='i' />
+    <arg type64='@' />
+    <retval type64='B' />
+  </function>
+  <function name='MRMediaRemoteSetCanBeNowPlayingApplication'>
+    <arg type64='B' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetElapsedTime'>
+    <arg type64='d' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetNowPlayingApplicationOverrideEnabled'>
+    <arg type64='B' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetNowPlayingInfo'>
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetPickedRouteWithPassword'>
+    <arg type64='i' />
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetPlaybackSpeed'>
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetRepeatMode'>
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteSetShuffleMode'>
+    <arg type64='i' />
+    <retval type64='v' />
+  </function>
+  <function name='MRMediaRemoteUnregisterForNowPlayingNotifications'>
+    <retval type64='v' />
+  </function>
+</signatures>

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "audio-juggler"
+version = "0.1.0"
+description = "Allows hardware control of mic and media on mac"
+authors = ["Jamie Bliss <jbliss@purestorage.com>"]
+readme = "README.md"
+packages = [{include = "audio_juggler"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quickmachotkey = "^2023.3.4"
+pyobjc-core = "^9.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
