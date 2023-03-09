@@ -10,6 +10,7 @@ packages = [{include = "audio_juggler"}]
 python = "^3.11"
 quickmachotkey = "^2023.3.4"
 pyobjc-core = "^9.0.1"
+pyobjc-framework-cocoa = "^9.0.1"
 
 
 [build-system]
