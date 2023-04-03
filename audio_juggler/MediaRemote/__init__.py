@@ -21,3 +21,13 @@ with _catch():
         ),
         globals=globals(),
     )
+
+
+def send_play():
+    global MRMediaRemoteSendCommand, kMRPlay
+    MRMediaRemoteSendCommand(kMRPlay, None)
+
+
+def send_pause():
+    global MRMediaRemoteSendCommand, kMRPause
+    MRMediaRemoteSendCommand(kMRPause, None)
